@@ -1,6 +1,8 @@
 <?php 
 
 /*
+README: This should run in Codepad without issue now.
+
 Write a function that accepts a List of positive integers as an input parameter. 
 
 For each integer, determine if the integer is even, odd, and or a prime number. 
@@ -10,6 +12,7 @@ The function should return a data structure containing a list of the even number
 A prime number is any number that is only divisible by itself and 1.
 
 Test input: 2, 281, 311, 987, 487, 871, 221, 565, 159, 82, 913, 531, 695, 506, 506, 346, 75, 836, 947, 400, 862, 3, 607, 607, 674, 265, 16, 35, 2147483646, 2147483647
+
 */
 
 
