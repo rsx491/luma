@@ -23,7 +23,7 @@ Test input: 2, 281, 311, 987, 487, 871, 221, 565, 159, 82, 913, 531, 695, 506, 5
   $numbers["even"] = []; 
   $numbers["prime"] = []; 
   
-  function process($input, $numbers){
+  function process($input, &$numbers){
     foreach($input as $i){
         $check = primeCheck($i);
         //echo "check i: $i\n";
@@ -38,7 +38,7 @@ Test input: 2, 281, 311, 987, 487, 871, 221, 565, 159, 82, 913, 531, 695, 506, 5
           $numbers["even"][$i] = $i;
         }
     }
-    return $numbers;
+    //return $numbers;
   }
   
 
@@ -54,5 +54,8 @@ Test input: 2, 281, 311, 987, 487, 871, 221, 565, 159, 82, 913, 531, 695, 506, 5
     }
   }
 
-  $big_list = process($input, $numbers);
-  var_dump($big_list);
+  //$big_list = process($input, $numbers);
+  //var_dump($big_list);
+  
+  process($input, $numbers);
+  var_dump($numbers);
